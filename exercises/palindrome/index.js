@@ -6,12 +6,13 @@
 // --- Examples:
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
+
 //Solution 1
 // function palindrome(str) {
 //   let reversedString = str.split("").reverse().join("");
 //   return str === reversedString;
 // }
-// console.log(palindrome("aqib"));
+// console.log(palindrome("abba"));
 
 //Solution 2
 const palindrome = (str) => {
@@ -21,5 +22,5 @@ const palindrome = (str) => {
   }
   return str == reverseString;
 };
-console.log(palindrome("aqib"));
-module.exports = palindrome;
+console.log(palindrome("abba"));
+
