@@ -8,9 +8,24 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 // Solution
-function reverseInt(n) {
-  return parseInt(n.toString().split("").reverse().join("")) * Math.sign(n);
-}
-console.log(reverseInt(-23));
+const reverseInteger=(num)=>parseInt(num.toString().split("").reverse().join('')) * Math.sign(num)
+console.log( reverseInteger(-15));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function reverseInt(n) {
+//   return parseInt(n.toString().split("").reverse().join("")) * Math.sign(n);
+// }
+// console.log(reverseInt(-23));
 
 
