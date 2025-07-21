@@ -12,24 +12,51 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {
-  const fizzbuzz = [];
-  for (let i = 1; i <= n; i++) {
-    if (i % 3 == 0 && i % 5 == 0) {
-      //check to see if i is multiple of 3 and 5
-      fizzbuzz.push("fizzbuzz");
-    } else if (i % 3 == 0) {
-      //check to see if i is multiple of 3
-      fizzbuzz.push("fizz");
-    } else if (i % 5 == 0) {
-      //check to see if i is multiple of 5
-      fizzbuzz.push("buzz");
-    } else {
-      //
-      fizzbuzz.push(i);
-    }
+const fizzBuzz = (num) => {
+  for (let i = 1; i <=num; i++) {
+      if(i % 3 ===0 && i % 5===0){
+          console.log("Fizzbuzz");
+      }else if(i % 3===0){
+        console.log("Fizz");
+      } else if(i % 5===0){
+        console.log("Buzz");
+     }else{
+  console.log(i);
+     }
   }
-  return fizzbuzz;
 }
-console.log(fizzBuzz(50));
-module.exports = fizzBuzz;
+fizzBuzz(50)
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function fizzBuzz(n) {
+//   const fizzbuzz = [];
+//   for (let i = 1; i <= n; i++) {
+//     if (i % 3 == 0 && i % 5 == 0) {
+//       //check to see if i is multiple of 3 and 5
+//       fizzbuzz.push("fizzbuzz");
+//     } else if (i % 3 == 0) {
+//       //check to see if i is multiple of 3
+//       fizzbuzz.push("fizz");
+//     } else if (i % 5 == 0) {
+//       //check to see if i is multiple of 5
+//       fizzbuzz.push("buzz");
+//     } else {
+//       //
+//       fizzbuzz.push(i);
+//     }
+//   }
+//   return fizzbuzz;
+// }
+// console.log(fizzBuzz(50));
+// module.exports = fizzBuzz;
