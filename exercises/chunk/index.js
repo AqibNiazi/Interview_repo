@@ -11,16 +11,11 @@
 function chunk(array, size) {
   // Create an empty array to hold the chunks
   const chunked = [];
-
+  let index=0;
   // loop throught the array to create chunks
-  for (const element of array) {
-    //if the last chunk is not full add the element to it or create a new chunk
-    const last = chunked[chunked.length - 1];
-    if (!last || last.length === size) {
-      chunked.push([element]);
-    } else {
-      last.push(element);
-    }
+  while (index < array.length) {
+    chunked.push(array.slice(index,index+size))
+    index+=size;
   }
   return chunked;
 }
@@ -28,3 +23,25 @@ function chunk(array, size) {
 console.log(chunk([1, 2, 3, 4, 5], 2));
 
 module.exports = chunk;
+
+
+// function chunk(array, size) {
+//   // Create an empty array to hold the chunks
+//   const chunked = [];
+
+//   // loop throught the array to create chunks
+//   for (const element of array) {
+//     //if the last chunk is not full add the element to it or create a new chunk
+//     const last = chunked[chunked.length - 1];
+//     if (!last || last.length === size) {
+//       chunked.push([element]);
+//     } else {
+//       last.push(element);
+//     }
+//   }
+//   return chunked;
+// }
+
+// console.log(chunk([1, 2, 3, 4, 5], 2));
+
+// module.exports = chunk;
